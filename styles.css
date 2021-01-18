@@ -1,0 +1,53 @@
+
+body{
+    font-family: "Arial";
+    font-size:16px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin:10%;
+}
+
+nav *{
+    margin: 10px;
+}
+
+#large-navbar{
+    display:none;
+}
+
+#donate-btn{
+    background-color: #FFD77D;
+    color:white;
+}
+
+#small-navbar-button{
+    max-height:10px;
+    width:auto;
+    display:block;
+}
+
+#main-name{
+    background-color: #66BBCB;
+    width:100%;
+    min-height:80vh;
+}
+
+#quienesNinosImage{
+    /*
+
+    width:auto;
+    max-height:50%;
+    height:50%;
+     */
+    object-fit: cover;
+    width:100%;
+}
+
+@media only screen and (max-width:580px){
+
+}
+
