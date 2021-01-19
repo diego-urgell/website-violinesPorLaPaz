@@ -1,0 +1,152 @@
+.bar{
+    display: inline-flex;
+    justify-content: right;
+}
+.navbar-comp{
+    background: #EBEBEB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar{
+    display: inline-block;
+    background: #fff;
+    color: #00c2cb;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.navbar:hover{
+    color: #03959c;
+}
+.tab{
+    display: table;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.tab-izq{
+    float: left;
+    width: 50%;
+    vertical-align: middle;
+}
+.tab-der{
+    float: right;
+    width: 50%;
+    vertical-align: middle;
+}
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+}
+.subtitulo{
+    text-align: center;
+}
+.subtitulo2{
+    padding: 0 50px;
+    text-align: justify;
+    color: #00c2cb;
+}
+.subtitulo2-sc{
+    padding: 0 50px;
+    text-align: justify;
+    color: #fff;
+}
+.subtitulo2-n{
+    padding: 0 50px;
+    text-align: justify;
+    color: #000;
+}
+.p-centro{
+    padding: 0 50px;
+    text-align: justify;
+}
+.blanco{
+    color: #fff;
+}
+.im{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.im-lado{
+    height: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.im-cuadro{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fondo{
+    background: #00c2cb;
+}
+.bg1{
+    background-image: url("/Users/rodolfoochoaalejos/Documents/GitHub/website-violinesPorLaPaz/images/Violines Assets/artesBackground.png");
+    background-color: transparent;
+    background-size: cover;
+}
+.pad{
+    padding: 25px 0 0 50px;
+}
+
+#donar-btn{
+    background: #00c2cb;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #EBEBEB;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+#donar-btn:hover{
+    background: #03959c;
+}
+#navbar-btn{
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+#logo{
+    height: 50px;
+    padding: 0 10px;
+}
+#lin-am{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 770px) {
+    .navbar-comp{
+        flex-direction: column;
+    }
+    .navbar{
+        margin: 10px 0;
+    }
+    .desaparece{
+        display: none;
+    }
+
+    #navbar-btn{
+        border: 1px solid #fff;
+        display:table-cell;
+        vertical-align:middle;
+    }
+    #logo{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #lin-am{
+        width: 250px;
+        height: 10px;
+    }
+
+}

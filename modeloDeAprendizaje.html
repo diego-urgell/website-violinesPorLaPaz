@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/modeloDeAprendizaje.css">
+</head>
+<body>
+
+    <nav>
+
+        <span>
+            <img id="logo" src="images/Violines Assets/logo_bYn.jpg" alt="Logo de Violines Por La Paz A.C.">
+        </span>
+        <span class="bar">
+            <span>
+                <img id="navbar-btn" src="images/Violines Assets/navBar.png" alt="Botón de navegación" onclick="despliegue()">
+            </span>
+            <span id="navbar-comp">
+                <a class="navbar desaparece">¿Quiénes somos?</a>
+                <a class="navbar desaparece">Modelo de aprendizaje</a>
+                <a class="navbar desaparece">Comunidad</a>
+                <a class="navbar desaparece">Campañas</a>
+                <a class="navbar desaparece">Participa</a>
+            </span>
+            <span>
+                <button id="donar-btn">Donar</button>
+            </span>
+        </span>
+        
+    </nav>
+
+    <section>
+        
+        <span>
+            <h2 class="titulo">El Modelo</h2>
+        </span>
+        <span>
+            <img id="lin-am" src="images/Violines Assets/barra_amarilla.png" alt="Barra de fin de sección">
+        </span>
+        <p class="p-centro">
+            En Violines Por La Paz A.C. contamos con un modelo...
+        </p>
+
+    </section>
+
+    <section class="tab">
+
+        <span class="tab-izq">
+            <h3 class="subtitulo">Fase 1: Exploración</h3>
+            <img class="im" src="images/Violines Assets/im_izq_1.png" alt="Fase de exploración">
+            <p class="p-centro">
+                Durante esta primera fase, los estudiantes tienen la oportunidad de...
+            </p>
+        </span>
+        <span class="tab-der">
+            <h3 class="subtitulo">Fase 2: Desarrollo</h3>
+            <img class="im" src="images/Violines Assets/im_der_1.png" alt="Fase de desarrollo">
+            <p class="p-centro">
+                Como segunda parte del modelo, nuestros alumnos entran a una fase de desarrollo...
+            </p>
+        </span>
+
+    </section>
+
+    <section>
+        
+        <span>
+            <h2 class="titulo">Los Talentos</h2>
+        </span>
+        <span>
+            <img id="lin-am" src="images/Violines Assets/barra_amarilla.png" alt="Barra de fin de sección">
+        </span>
+
+    </section>
+
+    <section class="tab">
+
+        <span class="tab-izq">
+            <img class="im-lado" src="images/Violines Assets/idiomasBackground@2x.png" alt="Idiomas">
+        </span>
+        <span class="tab-der">
+            <h3 class="subtitulo2">Idiomas</h3>
+            <p class="p-centro">
+                En un mundo globalizado, es indespensable conocer otros lenguajes...
+            </p>
+        </span>
+
+    </section>
+
+    <section class="tab fondo">
+
+        <span class="tab-izq">
+            <h3 class="subtitulo2-sc">Deportes</h3>
+            <p class="p-centro blanco">
+                El ejercicio y la actividad física son fundamentales para el sano desarrollo de los niños. Por este motivo, ofrecemos a nuestros alumnas y alumnos los siguientes talleres...
+            </p>
+        </span>
+        <span class="tab-der">
+            <img class="im-cuadro" src="images/Violines Assets/niñasDeportes.png" alt="Niñas y deportes">
+        </span>
+
+    </section>
+
+    <section class="tab">
+
+        <span class="tab-izq">
+            <img class="im-lado" src="images/Violines Assets/ninasSonrisa.png" alt="Niñas sonriendo">
+        </span>
+        <span class="tab-der">
+            <h3 class="subtitulo2-n">Desarrollo personal</h3>
+            <!-- <img class="im-lado" src="images/Violines Assets/desarrolloBackground.png" alt="Línea divisora"> -->
+            <p class="p-centro">
+                Para que nuestros alumnos tengan una formación integral, el programa incluye...
+            </p>
+        </span>
+
+    </section>
+
+    <section class="tab">
+
+        <span class="tab-izq bg1">
+            <h3 class="subtitulo2-n pad">Artes</h3>
+            <p class="p-centro">
+                Las artes permiten desarrollar la sensibilidad de los niños, así como su creatividad...
+            </p>
+        </span>
+        <span class="tab-der">
+            <img class="im-lado" src="images/Violines Assets/niñoDibujando.jpg" alt="Niño dibujando">
+        </span>
+
+    </section>
+
+    <script>
+        function despliegue(){
+            console.log('el botón funciona');
+            var ancla = document.getElementsByClassName('navbar');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+
+</body>
+</html>
