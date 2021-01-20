@@ -1,3 +1,30 @@
+body{
+    font-family: 'Mulish', sans-serif;
+}
+h2{
+    letter-spacing: .01em;
+    font-size: 50px;
+}
+h3{
+    letter-spacing: .02em;
+    font-size: 32px;
+}
+p{
+    font-weight: 200;
+    font-size: 20px;
+}
+ul{
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 20px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-weight: 200;
+    font-size: 15px;
+}
 .bar{
     display: inline-flex;
     justify-content: right;
@@ -19,7 +46,7 @@
 .navbar:hover{
     color: #03959c;
 }
-.tab{
+/* .tab{
     display: table;
     width: 100%;
     margin-bottom: 50px;
@@ -34,6 +61,17 @@
     float: right;
     width: 50%;
     vertical-align: middle;
+} */
+.cel-flex{
+    padding: 0 0 50px 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.columna{
+    width: 50%;
+    box-sizing: border-box;
 }
 .titulo{
     text-align: center;
@@ -43,19 +81,14 @@
     text-align: center;
 }
 .subtitulo2{
-    padding: 0 50px;
+    padding: 5px 50px 0 50px;
     text-align: justify;
-    color: #00c2cb;
 }
-.subtitulo2-sc{
-    padding: 0 50px;
-    text-align: justify;
-    color: #fff;
+.subtitulo3{
+    padding: 20px 0 0 20px;
 }
-.subtitulo2-n{
-    padding: 0 50px;
-    text-align: justify;
-    color: #000;
+.subtitulo4{
+    padding: 0 0 20px 20px;
 }
 .p-centro{
     padding: 0 50px;
@@ -64,26 +97,37 @@
 .blanco{
     color: #fff;
 }
+.gris{
+    color: #6c757d;
+}
+.amarillo{
+    color: #FFD77D;
+}
+.azul{
+    color: #00c2cb;
+}
 .im{
-    height: 100px;
+    height: 200px;
     display: block;
     margin: auto;
 }
 .im-lado{
-    height: 250px;
+    height: 300px;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 .im-cuadro{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+    height: 250px;
+    width: 350px;
     display: block;
+    object-fit: cover;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .fondo{
     background: #00c2cb;
@@ -94,7 +138,26 @@
     background-size: cover;
 }
 .pad{
-    padding: 25px 0 0 50px;
+    padding: 50px 0 0 50px;
+}
+.pad-der{
+    padding-right: 70px;
+}
+.pad-top{
+    padding-top: 30px;
+}
+.marg-cero{
+    margin: 0;
+}
+.marg{
+    margin: 8px 0 8px 25px;
+}
+.marg-btm{
+    margin-bottom: 50px;
+}
+.col-elementos{
+    display: inline-block;
+    padding-bottom: 0;
 }
 
 #donar-btn{
@@ -118,13 +181,30 @@
     height: 50px;
     padding: 0 10px;
 }
+#circ-azul{
+    width: 300px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    border:8px solid #00c2cb;
+    margin-top: 30px;
+}
 #lin-am{
-    width: 500px;
+    width: 700px;
     display: block;
     margin: auto;
+    padding-bottom: 10px;
 }
+#lin-am2{
+    width: 450px;
+    display: block;
+}
+/* #lin-az{
+    border-right-color: #00c2cb;
+    border-right-width: 8px;
+} */
 
-@media (max-width: 770px) {
+@media (max-width: 975px) {
     .navbar-comp{
         flex-direction: column;
     }
@@ -133,6 +213,13 @@
     }
     .desaparece{
         display: none;
+    }
+    .columna{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .im-cuadro{
+        padding-top: 10px;
     }
 
     #navbar-btn{
@@ -148,5 +235,4 @@
         width: 250px;
         height: 10px;
     }
-
 }
