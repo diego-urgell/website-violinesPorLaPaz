@@ -1,53 +1,338 @@
+/*
+* {
+    border-style: solid;
+    border-color:black;
+}
+ */
 
-body{
+html{
     font-family: "Arial";
     font-size:16px;
+    color:black;
 }
 
 nav{
+    font-size: 14px;
+    position: fixed;
     display: flex;
-    align-items: center;
+    flex-flow: row nowrap;
     justify-content: flex-end;
-    margin:10%;
+    align-items: center;
+    max-width:100%;
+    width:100%;
+    top:0;
+    right:0;
+    background-color: white;
+    padding:1vh 1vw 1vh 1vw;
+    margin: 0vh 0vw 0vh 0vw;
 }
 
 nav *{
-    margin: 10px;
+    margin: 0.5vh 4vw 0.5vh 4vw;
 }
 
-#large-navbar{
-    display:none;
+#logo{
+    margin:0 auto 0 5vw;
+    height:15vh;
+    width:auto;
 }
 
 #donate-btn{
     background-color: #FFD77D;
-    color:white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1vw 3vw 1vw 3vw;
+    margin: 0.3vw 1vw 0.3vw 1vw;
 }
 
 #small-navbar-button{
-    max-height:10px;
+    height:6vw;
     width:auto;
-    display:block;
+    margin-right:1vw;
+}
+
+#large-navbar{
+    display:none;
+    border-bottom-width: 0.8vh;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+
+.selected{
+    border-bottom-color: #FFD77D;
+    border-bottom-width:1vh;
+    border-bottom-style: solid;
+}
+
+#large-navbar .selected:hover{
+    color: black;
+    border-bottom-color: #FFD77D; !important
+}
+
+#large-navbar a{
+    transition: border-bottom-width 0.5s, color 0s, border-bottom-color 0s;
+    transition-timing-function:ease-out;
+    margin: 0.3vw 0.6vw 0vw 0.6vw;
+}
+
+#large-navbar a:hover{
+    color: #00C2CB;
+    border-bottom-style: solid;
+    border-bottom-width: 1vh;
+    border-bottom-color:#00C2CB;
+}
+
+#donate-btn:hover a{
+    color: white;
+}
+
+#donate-btn:hover{
+    background-color: #00C2CB;
 }
 
 #main-name{
-    background-color: #66BBCB;
-    width:100%;
-    min-height:80vh;
+    margin-bottom:10vh;
+    margin-top: 17vh;
+    background-color: #00C2CB;
 }
 
-#quienesNinosImage{
-    /*
+#main-name p,h1{
+    display:flex;
+    width:100%;
+    height:auto;
+    justify-content: center;
+    align-content: center;
+    margin: 2vh 0 3vh 0;
+}
 
-    width:auto;
-    max-height:50%;
-    height:50%;
-     */
+.image{
+    width:100%;
+    height:50vh;
     object-fit: cover;
+}
+
+#slogan{
+    color:white;
+    font-size: 18px;
+    text-align:center;
+    padding-bottom: 4vh;
+    margin-bottom:5vh;
+}
+
+#labor-text{
+    color:white;
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    max-height:40vh;
+    max-width:100%;
+    padding: 10vh 10vw 10vh 10vw;
+    background-image:url('../images/laborBackground.png');
+    background-size:cover;
+}
+
+.btn{
+    width:50%;
+    display: block;
+    font-weight:bold;
+    justify-content: center;
+    align-content: center;
+    padding: 2vh 3vw 2vh 3vw;
+    margin: 0vh 0 0 0;
+}
+
+#labor-button{
+    border: solid white 2px;
+}
+
+#labor-button:hover{
+    color: #00C2CB;
+    background-color: white;
+}
+
+#historia{
+    display:block;
+    text-align: center;
+    margin-top:10vh;
+    max-width:100vw;
+}
+
+#historia-header-1{
+    color: #6C757D;
+    display:inline-block;
+}
+
+#historia-header-2{
+    color: #00C2CB;
+    display:inline-block;
+}
+
+#historia-header{
+    display:inline-block;
+    padding: 0vh 8vw 0vh 8vw;
+    margin: 1vh 10vw 1vh 10vw;
+    border-bottom: solid #FFD77D 5px;
+}
+
+#historia-container{
+    display:flex;
+    flex-flow: column-reverse nowrap;
     width:100%;
+    max-width: 100%;
+    text-align:left;
+    margin:0vh 0 0 0;
 }
 
-@media only screen and (max-width:580px){
-
+#historia-image-container{
+    width:100%;
+    height:50%;
 }
 
+#historia-image{
+    object-position:left top
+}
+
+#historia-text{
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    max-width:100%;
+    padding: 2vh 5vw 4vh 5vw;
+}
+
+
+#historia-button{
+    border: solid #00C2CB 2px;
+    color: #00C2CB;
+}
+
+
+@media only screen and (min-width:700px){
+
+    html{
+        font-size: 15px;
+    }
+
+    #large-navbar{
+        display: inline-flex;
+        border-botom: 3px solid black; !important
+    }
+
+    #small-navbar-button{
+        display:none;
+    }
+
+    #donate-btn{
+        padding: 0.5vw 2vw 0.5vw 2vw;
+        margin: 0.3vw 0.3vw 0.3vw 0.5vw;
+    }
+
+    nav *{
+        margin: 0.5vh 1vw 0.5vh 1vw;
+        font-size: 13px;
+    }
+
+    #logo{
+        margin:0 auto 0 5vw;
+        width:10vw;
+        height:auto;
+    }
+
+    #labor{
+        display:grid;
+        max-width:100%;
+        grid-template-columns: 100%;
+        height:70vh;
+        margin-top:15vh;
+    }
+
+    #labor *{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    #labor-text{
+        display:block;
+        justify-self: start;
+        align-content:center;
+        align-self: center;
+        width:60%;
+        min-width:60%;
+        max-width:60%;
+        min-height:60vh;
+        padding:0;
+        margin: 0 0 3vh 0;
+    }
+
+    #labor-text *{
+        margin: 2vh 10vw 2vh 4vw;
+    }
+
+    #labor-header{
+        margin: 8vw 10vw 2vh 4vw;
+    }
+
+    #labor-image-container{
+        justify-self: end;
+        align-self: center;
+        max-width: 40%;
+        width:40%;
+        margin:0 5vw 0 0;
+    }
+
+    #labor-image{
+        min-height: 30vh;
+        max-height:50vh;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .btn{
+        display: inline-block;
+        font-weight:bold;
+        justify-content: center;
+        align-content: center;
+        padding: 2vh 2vw 2vh 2vw;
+        width: auto;
+    }
+
+    #labor-button{
+        border: solid white 2px;
+        margin: 2vh 8vw 0vh 4vw;
+    }
+
+    #historia-container{
+        margin-top:5vw;
+        flex-flow: row nowrap;
+        max-width:100%;
+    }
+    #historia{
+        margin:5vw 4vw 5vw 4vw;
+        max-width:100vw;
+    }
+
+    #historia-text{
+        display:block;
+        max-width:60%;
+        padding: 0vh 3vw 4vh 3vw;
+    }
+
+    #historia-button{
+        max-width:40%;
+    }
+
+    #labor-button{
+        border: solid #00C2CB 2px;
+        margin: 2vh 8vw 0vh 0vw;
+        padding: 2vh 3vw 4vh 3vw;
+    }
+
+    #historia-image-container{
+        height:100%;
+    }
+
+}

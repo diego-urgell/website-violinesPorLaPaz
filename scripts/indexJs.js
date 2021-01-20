@@ -27,3 +27,27 @@ function loadImage(elem, path){
 changeImg("quienesNinosImage");
 window.addEventListener("resize", changeImg("quienesNinosImage"));
 */
+
+/*
+function calcNavOffset(){
+    let childs = document.body.children;
+    let navBar = childs[0];
+    let firstSection = document.getElementById("main-name");
+
+    for(let key in firstSection){
+        console.log(`Key: ${key}. Value: ${firstSection[key]}`);
+        if (key == "height") {
+            console.log(`Key: ${key}. Value: ${firstSection.style[key]}`);
+        }
+    }
+
+
+    firstSection.style.marginTop = "100px"
+    console.log(navBar.offsetHeight);
+    console.log(firstSection.style.marginTop);
+    console.log(navBar.style.marginTop);
+
+}
+
+window.addEventListener("load", calcNavOffset);
+*/
