@@ -46,22 +46,6 @@ h6{
 .navbar:hover{
     color: #03959c;
 }
-/* .tab{
-    display: table;
-    width: 100%;
-    margin-bottom: 50px;
-    margin-top: 25px;
-}
-.tab-izq{
-    float: left;
-    width: 50%;
-    vertical-align: middle;
-}
-.tab-der{
-    float: right;
-    width: 50%;
-    vertical-align: middle;
-} */
 .cel-flex{
     padding: 0 0 50px 0;
     margin: 0 auto;
@@ -100,9 +84,9 @@ h6{
 .gris{
     color: #6c757d;
 }
-.amarillo{
-    color: #FFD77D;
-}
+/* .azul-osc{
+    color: #0077B6;
+} */
 .azul{
     color: #00c2cb;
 }
@@ -124,7 +108,7 @@ h6{
     display: block;
     object-fit: cover;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 0;
     margin-top: 10px;
     margin-bottom: 0;
@@ -133,7 +117,7 @@ h6{
     background: #00c2cb;
 }
 .bg1{
-    background-image: url("/Users/rodolfoochoaalejos/Documents/GitHub/website-violinesPorLaPaz/images/Violines Assets/artesBackground.png");
+    background-image: url("/Users/rodolfoochoaalejos/Documents/GitHub/website-violinesPorLaPaz/images/Violines Assets/artes_BG.png");
     background-color: transparent;
     background-size: cover;
 }
@@ -146,6 +130,9 @@ h6{
 .pad-top{
     padding-top: 30px;
 }
+.pad-top2{
+    padding-top: 65px;
+}
 .marg-cero{
     margin: 0;
 }
@@ -154,6 +141,12 @@ h6{
 }
 .marg-btm{
     margin-bottom: 50px;
+}
+.marg-btm2{
+    margin-bottom: 10px;
+}
+.marg-btm3{
+    margin-bottom: 5px;
 }
 .col-elementos{
     display: inline-block;
@@ -189,20 +182,25 @@ h6{
     border:8px solid #00c2cb;
     margin-top: 30px;
 }
-#lin-am{
-    width: 700px;
+#lin-az{
+    width: 500px;
+    height: 13px;
     display: block;
     margin: auto;
     padding-bottom: 10px;
 }
-#lin-am2{
-    width: 450px;
+#lin-az2{
+    width: 500px;
+    height: 10px;
     display: block;
 }
-/* #lin-az{
-    border-right-color: #00c2cb;
-    border-right-width: 8px;
-} */
+#lin-cua{
+    width: 480px;
+    padding-left: 25px;
+    padding-top: 0;
+    margin-top: 0;
+
+}
 
 @media (max-width: 975px) {
     .navbar-comp{
@@ -221,6 +219,12 @@ h6{
     .im-cuadro{
         padding-top: 10px;
     }
+    .pad-top2{
+        padding-top: 75px;
+    }
+    .pad-der2{
+        padding-right: 80px;
+    }
 
     #navbar-btn{
         border: 1px solid #fff;
@@ -232,7 +236,7 @@ h6{
         vertical-align: middle;
     }
     #lin-am{
-        width: 250px;
+        width: 350px;
         height: 10px;
     }
 }
