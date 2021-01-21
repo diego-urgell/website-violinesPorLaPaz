@@ -1,18 +1,34 @@
-body{
-    font-family: 'Mulish', sans-serif;
+
+html{
+    font-family: "Lato";
+    font-weight:400;
+    font-size:16px;
+    color:black;
 }
+
+iframe{
+    position:fixed;
+    border:none;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:auto;
+}
+
 h2{
     letter-spacing: .01em;
-    font-size: 50px;
+    font-size: 30px;
 }
 h3{
     letter-spacing: .02em;
-    font-size: 32px;
+    font-size: 35px;
 }
+/*
 p{
     font-weight: 200;
-    font-size: 20px;
+    font-size: 16px;
 }
+ */
 ul{
     font-weight: 200;
     font-size: 20px;
@@ -25,27 +41,11 @@ h6{
     font-weight: 200;
     font-size: 15px;
 }
-.bar{
-    display: inline-flex;
-    justify-content: right;
+
+#modelo{
+    margin-top:25vh;
 }
-.navbar-comp{
-    background: #EBEBEB;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.navbar{
-    display: inline-block;
-    background: #fff;
-    color: #00c2cb;
-    padding: 10px;
-    text-decoration: none;
-    margin: 10px 0;
-}
-.navbar:hover{
-    color: #03959c;
-}
+
 .cel-flex{
     padding: 0 0 50px 0;
     margin: 0 auto;
@@ -57,30 +57,38 @@ h6{
     width: 50%;
     box-sizing: border-box;
 }
+
 .titulo{
     text-align: center;
     margin-top: 50px;
 }
+
 .subtitulo{
     text-align: center;
 }
+
 .subtitulo2{
     padding: 5px 50px 0 50px;
     text-align: justify;
 }
+
 .subtitulo3{
     padding: 20px 0 0 20px;
 }
+
 .subtitulo4{
     padding: 0 0 20px 20px;
 }
+
 .p-centro{
     padding: 0 50px;
     text-align: justify;
 }
+
 .blanco{
     color: #fff;
 }
+
 .gris{
     color: #6c757d;
 }
@@ -90,11 +98,13 @@ h6{
 .azul{
     color: #00c2cb;
 }
+
 .im{
     height: 200px;
     display: block;
     margin: auto;
 }
+
 .im-lado{
     height: 300px;
     display: block;
@@ -102,6 +112,7 @@ h6{
     margin-top: 60px;
     margin-bottom: 20px;
 }
+
 .im-cuadro{
     height: 250px;
     width: 350px;
@@ -113,11 +124,12 @@ h6{
     margin-top: 10px;
     margin-bottom: 0;
 }
+
 .fondo{
     background: #00c2cb;
 }
 .bg1{
-    background-image: url("/Users/rodolfoochoaalejos/Documents/GitHub/website-violinesPorLaPaz/images/Violines Assets/artes_BG.png");
+    background-image: url("../images/artes_BG.png");
     background-color: transparent;
     background-size: cover;
 }
