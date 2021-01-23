@@ -1,0 +1,131 @@
+
+section{
+    margin-top:25vh;
+    width:100vw;
+    display:flex;
+    flex-flow:row wrap;
+    height:auto;
+    justify-content:center; !important
+}
+
+#contacto-header{
+    justify-self:center;
+    text-align:center;
+}
+
+#contacto-container{
+    max-width:100%;
+    width:100%;
+    min-height:100vh;
+    margin-top:5vh;
+    background-position: center bottom;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:60vh;
+}
+
+#contacto-container * {
+    grid-column-start: 1;
+}
+
+#contacto-image{
+    grid-row-start:1;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    align-self:start;
+    justify-self:center;
+}
+
+#contacto-row{
+    grid-row-start:2;
+    display:flex;
+    flex-flow:column nowrap;
+    align-self:end;
+    justify-content: space-between;
+    align-content:center;
+    align-items:center;
+    color:white;
+}
+
+.contact-region{
+    display:flex;
+    width:100%;
+    min-height:30vh;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+}
+
+#social-net{
+    background-color: rgba(0, 194, 203,1);
+}
+
+#social-net div{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+}
+
+section img{
+    width:15vw;
+    height:15vw;
+    min-height:20%;
+    margin-bottom:3vh;
+    margin-right:2vw;
+    margin-left:2vw;
+}
+
+#mail {
+    background-color: rgba(0, 194, 203, .8);
+}
+
+#phone{
+    background-color: rgba(0, 194, 203,.60);
+}
+
+
+
+@media only screen and (min-width:700px){
+
+    #contacto-container{
+        grid-template-rows:100vh;
+    }
+
+    #contacto-container *{
+        grid-row-start: 1;
+    }
+
+    #contacto-row{
+        flex-flow:row nowrap;
+    }
+
+    .contact-region{
+        width:33.33%;
+        min-height:30vh;
+    }
+
+    #social-net{
+        background-color: rgba(0, 194, 203,.80);
+    }
+
+    #mail {
+        background-color: rgba(0, 194, 203, .60);
+    }
+
+    #phone{
+        background-color: rgba(0, 194, 203,.40);
+    }
+
+    section img{
+        width:5vw;
+        height:5vw;
+        min-height:20%;
+        margin-bottom:3vh;
+        margin-right:2vw;
+        margin-left:2vw;
+    }
+}
+

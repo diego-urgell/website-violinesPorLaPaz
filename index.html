@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Violines Por La Paz </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap"
-          rel="stylesheet">
-    <link rel = "stylesheet" href = "styles/styles.css">
-    <script src="scripts/indexJs.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
+    <link rel = "stylesheet" href = "styles/generalStyles.css">
+    <link rel = "stylesheet" href = "styles/indexStyles.css">
+    <script>
+        window.sessionStorage.setItem("select", "home");
+    </script>
+    <script src="scripts/navBar.js"></script>
 </head>
 <body>
 
-    <iframe src="navBar.html"></iframe>
+    <iframe id="navBar" src="navBar.html"></iframe>
     <section id="main-name">
         <div>
             <img class="image" src="images/quienesNinosTitle.png">
@@ -38,9 +42,9 @@
     </section>
 
     <section id="historia">
-        <div id="historia-header">
-            <h2 id="historia-header-1"> Nuestra &nbsp;</h2>
-            <h2 id="historia-header-2"> historia </h2>
+        <div class="comp-header-container">
+            <h2 class="comp-header-1"> Nuestra &nbsp;</h2>
+            <h2 class="comp-header-2"> historia </h2>
         </div>
         <br>
         <div id="historia-container">

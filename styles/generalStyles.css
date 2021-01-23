@@ -1,0 +1,38 @@
+html{
+    font-family: "Muli";
+    font-weight:400;
+    font-size:16px;
+    color:#6c757d;
+}
+
+iframe{
+    position:fixed;
+    border:none;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:auto;
+}
+
+.comp-header-1{
+    color: #6C757D;
+    display:inline-block; !important
+    margin:0;
+    padding:0;
+    line-height:50%;
+}
+
+.comp-header-2{
+    color: #00C2CB;
+    display:inline-block; !important
+    line-height:50%;
+    margin:0;
+    padding:0;
+}
+
+.comp-header-container{
+    display:inline-block;
+    padding: 0vh 8vw 0vh 8vw;
+    margin: 1vh 10vw 1vh 10vw;
+    border-bottom: solid #0077B6 5px;
+}
