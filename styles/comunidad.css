@@ -100,6 +100,14 @@ h6{
 .marg-top{
     margin-top: 70px;
 }
+.im{
+    size: 100px;
+}
+.im2{
+    height: 100px;
+    padding-top: 20px;
+    justify-content: center;
+}
 
 #logo{
     height: 50px;
@@ -111,6 +119,10 @@ h6{
     display: block;
     margin: auto;
     padding-bottom: 10px;
+}
+#im-der{
+    padding-bottom: 25px;
+    padding-left: 190px;
 }
 
 @media (max-width: 975px) {
