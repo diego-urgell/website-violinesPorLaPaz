@@ -1,0 +1,252 @@
+
+html{
+    font-family: "Mulish", sans-serif;
+    font-weight:400;
+    font-size:16px;
+    color:black;
+}
+
+iframe{
+    position:fixed;
+    border:none;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:auto;
+}
+
+h2{
+    letter-spacing: .01em;
+    font-size: 33px;
+}
+h3{
+    letter-spacing: .02em;
+    font-size: 38px;
+}
+p{
+    font-weight: 200;
+    font-size: 18px;
+}
+ul{
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 18px;
+}
+h5{
+    font-size: 13px;
+}
+h6{
+    font-weight: 200;
+    font-size: 10px;
+}
+
+#modelo{
+    margin-top:25vh;
+}
+
+.cel-flex{
+    padding: 0 0 50px 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.columna{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.subtitulo2{
+    padding: 5px 50px 0 50px;
+    text-align: justify;
+}
+
+.subtitulo3{
+    padding: 20px 0 0 20px;
+}
+
+.subtitulo4{
+    padding: 0 0 20px 20px;
+}
+
+.p-centro{
+    padding: 0 50px;
+    text-align: justify;
+}
+
+.blanco{
+    color: #fff;
+}
+
+.gris{
+    color: #6c757d;
+}
+/* .azul-osc{
+    color: #0077B6;
+} */
+.azul{
+    color: #00c2cb;
+}
+
+.im{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.im-lado{
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.im-cuadro{
+    height: 250px;
+    width: 350px;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fondo{
+    background: #00c2cb;
+}
+.bg1{
+    background-image: url("../images/artes_BG.png");
+    background-color: transparent;
+    background-size: cover;
+}
+.pad{
+    padding: 50px 0 0 50px;
+}
+.pad-der{
+    padding-right: 70px;
+}
+.pad-top{
+    padding-top: 30px;
+}
+.pad-top2{
+    padding-top: 65px;
+}
+.marg-cero{
+    margin: 0;
+}
+.marg{
+    margin: 8px 0 8px 25px;
+}
+.marg-btm{
+    margin-bottom: 50px;
+}
+.marg-btm2{
+    margin-bottom: 10px;
+}
+.marg-btm3{
+    margin-bottom: 5px;
+}
+.col-elementos{
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+#donar-btn{
+    background: #00c2cb;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #EBEBEB;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+#donar-btn:hover{
+    background: #03959c;
+}
+#navbar-btn{
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+#logo{
+    height: 50px;
+    padding: 0 10px;
+}
+#circ-azul{
+    width: 300px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    border:8px solid #00c2cb;
+    margin-top: 30px;
+}
+#lin-az{
+    width: 500px;
+    height: 8px;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+#lin-az2{
+    width: 500px;
+    height: 6px;
+    display: block;
+}
+#lin-cua{
+    width: 460px;
+    padding-left: 35px;
+    padding-top: 0;
+    margin-top: 0;
+
+}
+
+@media (max-width: 975px) {
+    .navbar-comp{
+        flex-direction: column;
+    }
+    .navbar{
+        margin: 10px 0;
+    }
+    .desaparece{
+        display: none;
+    }
+    .columna{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .im-cuadro{
+        padding-top: 10px;
+    }
+    .pad-top2{
+        padding-top: 75px;
+    }
+    .pad-der2{
+        padding-right: 80px;
+    }
+
+    #navbar-btn{
+        border: 1px solid #fff;
+        display:table-cell;
+        vertical-align:middle;
+    }
+    #logo{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #lin-am{
+        width: 350px;
+        height: 10px;
+    }
+}
