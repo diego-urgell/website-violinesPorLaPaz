@@ -1,19 +1,4 @@
 
-html{
-    font-family: "Muli";
-    font-weight:400;
-    font-size:16px;
-    color:#6c757d;
-}
-
-iframe{
-    position:fixed;
-    border:none;
-    top:0;
-    bottom:0;
-    width:100vw;
-    height:auto;
-}
 
 #main-name{
     margin-bottom:10vh;
@@ -192,10 +177,6 @@ TODO: Create a class for the h2 headers and adjust html
 }
 
 @media only screen and (min-width:700px){
-
-    html{
-        font-size: 15px;
-    }
 
     #labor{
         display:grid;
