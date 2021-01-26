@@ -1,6 +1,6 @@
 
 section{
-    margin-top:25vh;
+    margin-top:20vh;
     width:100%;
     height:auto;
     max-width:100%;
@@ -193,6 +193,11 @@ section{
     width:80%;
 }
 
+.p-small{
+    text-align:left;
+    width:70%;
+}
+
 #lista-deportes{
     list-style-position: inside;
     padding-left:5%; !important
@@ -342,25 +347,98 @@ section{
 }
 
 @media only screen and (max-width: 700px) {
-    .navbar-comp{
-        flex-direction: column;
+
+    section{
+        margin-top:10vh;
     }
-    .navbar{
-        margin: 10px 0;
-    }
-    .desaparece{
-        display: none;
-    }
+
     .columna-centrada{
         width: 100%;
         margin-bottom: 10px;
     }
-    .im-cuadro{
-        padding-top: 10px;
+
+    #modelo-seccion-izq, #modelo-seccion-der{
+        width:90%;
+        max-width:90%;
+        border:none;
     }
+
+    .cel-flex{
+        width:100%;
+    }
+
+    .p-centro{
+        width:90%;
+        justify-self:center;
+        align-self:center;
+    }
+
+    #modelo-desc{
+        width:80%;
+        max-width:80%;
+        justify-self:center;
+        align-self:center;
+    }
+
+    #deportes-left *{
+        padding-left:7%;
+    }
+
+    .columna-izq, .columna-centrada{
+        width:90%;
+    }
+
+    .im-cuadro{
+        min-width:90%;
+    }
+
+    #circ-azul{
+        margin-top:3vh;
+        width:60vw;
+        height:60vw;
+    }
+
+    #deportes-section{
+        flex-flow:column nowrap;
+        justify-items:center;
+        justify-content:center;
+        align-items:center;
+        justify-items:center;
+    }
+
+    #language, #desarrollo, #artes{
+        display:flex;
+        flex-flow:column-reverse nowrap;
+        justify-items:center;
+        justify-content:center;
+        align-items:center;
+        justify-items:center;
+    }
+
+    #artes-image-container{
+        justify-self:center;
+        align-self:center;
+        max-width:80%;
+        width:80%;
+        height:auto;
+    }
+
+    #artes-container, #artes-inner-container{
+        max-width:100%;
+        width:100%;
+        height:auto;
+    }
+
+    ul, li{
+        width:30vw; !important
+        max-width:30vw; !important
+    }
+
+
     .pad-top2{
         padding-top: 75px;
     }
+
     .pad-der2{
         padding-right: 80px;
     }

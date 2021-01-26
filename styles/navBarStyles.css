@@ -1,26 +1,27 @@
-
 nav{
     font-family:"Lato";
     text-transform: uppercase; !important
-    color:#6c757d; !important
-    font-weight:700; !important
+    color:#6c757d;
+    font-weight:400; !important
     letter-spacing: 0.01rem;
     position: fixed;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
     align-items: center;
     max-width:100%;
     width:100%;
     top:0;
     right:0;
     background-color: white;
-    padding:7vh 5vw 4vh 1vw;
-    margin: 1vh 1vw 0vh 0vw;
+    padding: 7vh 7vw;
+    transition:0.7s;
 }
 
+
+
 nav *{
-    margin: 0.5vh 4vw 0.5vh 4vw;
+    margin: 0vh 4vw 0vh 4vw;
 }
 
 #logo{
@@ -32,6 +33,13 @@ nav *{
     left:5vw;
 }
 
+#nav-control{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-self: flex-start;
+    margin-right: 0;
+}
+
 #donate-btn{
     font-size:16px;
     color:white;
@@ -39,18 +47,49 @@ nav *{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 1vw 3vw 1vw 3vw;
+    padding: 2vw 4vw 2vw 4vw;
     margin: 0.3vw 1vw 0.3vw 1vw;
+    cursor:pointer;
+}
+
+#donate-btn a{
+    font-size:14px;
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
 }
 
 #small-navbar-button{
     height:6vw;
     width:auto;
     margin-right:1vw;
+    align-self:center;
 }
 
 #large-navbar{
+    font-family:"Lato";
+    text-transform: uppercase; !important
+    font-weight:700; !important
+    color:white;
+    box-sizing:border-box;
+    letter-spacing: 0.01rem;
+    font-size: 16px;
+    position:fixed;
     display:none;
+    flex-flow: column nowrap;
+    text-align: center;
+    top:0;
+    right:0;
+    width:0;
+    height:0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    margin: 0;
+    background-color: #00C2CB;
+    justify-content:space-between;
+    padding: 5vh 1vw 5vh 1vw;
+    padding: 20vh 5vw;
+    transition:0.7s;
 }
 
 .selected{
@@ -67,7 +106,7 @@ nav *{
 
 #large-navbar a{
     text-decoration:none;
-    color:#6c757d;!important
+    color:white;
     transition: border-bottom-width 0.5s, color 0s, border-bottom-color 0s;
     transition-timing-function:ease-out;
     margin: 0.3vw 0.6vw 0vw 0.6vw;
@@ -75,10 +114,10 @@ nav *{
 }
 
 #large-navbar a:hover{
-    color: #00C2CB;
+    color: #6c757d;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    border-bottom-color:#00C2CB;
+    border-bottom-color:#6c757d;
 }
 
 #donate-btn:hover a{
@@ -95,9 +134,32 @@ nav *{
         font-size: 15px;
     }
 
+    nav{
+        flex-flow:row-reverse nowrap;
+        justify-content: flex-start;
+        padding:5vh 5vw 4vh 1vw;
+        margin: 0;
+
+    }
+
+    nav *{
+        margin: 0.5vh 4vw 0.5vh 4vw;
+    }
+
     #large-navbar {
+        position:initial;
+        background-color: white;
+        display:flex;
+        flex-flow:row nowrap;
+        width:auto;
+        height:auto;
         display: inline-flex;
+        padding: 5vh 1vw 5vh 1vw;
         border-botom: 3px solid black;
+    }
+
+    #large-navbar a{
+        color: #6c757d;
     }
 
     #small-navbar-button {
