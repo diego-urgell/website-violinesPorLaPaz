@@ -2,7 +2,7 @@
 
 #main-name{
     margin-bottom:10vh;
-    margin-top: 25vh;
+    margin-top: 12vh;
     background-color: #00C2CB;
 }
 
@@ -27,7 +27,7 @@
     text-transform:uppercase;
     letter-spacing:0.1rem;
     color:white;
-    font-size: 15px;
+    font-size: calc(18px + 0.6vw);
     text-align:center;
     padding: 4vh 0 6vh 0;
     margin-bottom:5vh;
@@ -39,7 +39,7 @@
     flex-flow: column nowrap;
     align-content: center;
     justify-content: center;
-    max-height:40vh;
+
     max-width:100%;
     padding: 10vh 10vw 10vh 10vw;
     background-image:url('../images/laborBackground.png');
@@ -176,7 +176,7 @@ TODO: Create a class for the h2 headers and adjust html
     object-fit:cover;
 }
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:850px){
 
     #labor{
         display:grid;

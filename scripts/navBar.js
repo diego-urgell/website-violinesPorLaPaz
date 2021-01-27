@@ -1,3 +1,5 @@
+let baseurl = "website-violinesPorLaPaz";
+
 /**
  * This script manages the behaviour of the navigation bar, including the links, selected element, and opening and closing
  * of the side navbar in narrow windows.
@@ -14,18 +16,20 @@ window.addEventListener("resize", changeNav);
  * corresponding to it.
  */
 function loadLinks(){
+    for(let key in window.location){
+        console.log(`Key: ${key}. Value: ${window.location[key]}`);
+    }
     let frame = document.getElementById("navBar").contentDocument;
     let smallNav = frame.getElementById("small-navbar-button");
     let donate = frame.getElementById("donate-btn");
     smallNav.addEventListener("click", toggleNav)
     donate.onclick = () => window.open("https://www.paypal.com/donate/?hosted_button_id=QT4ZRWJ5Z28T6")
-    console.log(smallNav.onclick);
     let links = frame.getElementsByClassName("menuLink");
     for(let i = 0; i < links.length;i++) {
-        console.log(links[i].id);
+        console.log(links[i].dataset.href);
         links[i].onclick = function(){
             window.sessionStorage["select"] = this.id;
-            window.location = this.dataset.href;
+            window.location.pathname = baseurl + this.dataset.href;
         }
     }
 };
@@ -38,7 +42,8 @@ function loadLinks(){
 function changeNav(){
     let frame = document.getElementById("navBar").contentDocument;
     let status = frame.getElementById("large-navbar").dataset.status;
-    if(status == "open" && window.innerWidth >= 700){
+    let content = document.getElementsByClassName("content")[0];
+    if(status == "open" && window.innerWidth >= 990){
         frame.getElementById("large-navbar").dataset.status = "closed";
         content.removeEventListener("click", closeNav)
         closeNav();

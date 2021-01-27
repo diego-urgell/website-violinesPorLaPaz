@@ -5,6 +5,7 @@ nav{
     color:#6c757d;
     font-weight:400; !important
     letter-spacing: 0.01rem;
+    font-size:calc(16px + 0.6vw);
     position: fixed;
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -25,7 +26,7 @@ nav *{
 
 #logo{
     margin:0 auto 0 5vw;
-    width:20vw;
+    width:170px;
     height:auto;
     position:fixed;
     top:0px;
@@ -40,19 +41,19 @@ nav *{
 }
 
 #donate-btn{
-    font-size:16px;
     color:white;
     background-color: #0077B6;
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size:calc(16px + 0.6vw);
     padding: 2vw 4vw 2vw 4vw;
     margin: 0.3vw 1vw 0.3vw 1vw;
     cursor:pointer;
 }
 
 #donate-btn a{
-    font-size:14px;
+
     color:white;
     text-decoration:none;
     cursor:pointer;
@@ -72,7 +73,6 @@ nav *{
     color:white;
     box-sizing:border-box;
     letter-spacing: 0.01rem;
-    font-size: 16px;
     position:fixed;
     display:none;
     flex-flow: column nowrap;
@@ -128,18 +128,14 @@ nav *{
     background-color: #00C2CB;
 }
 
-@media only screen and (min-width:680px) {
-
-    html {
-        font-size: 15px;
-    }
+@media only screen and (min-width:1090px) {
 
     nav{
         flex-flow:row-reverse nowrap;
         justify-content: flex-start;
         padding:5vh 5vw 4vh 1vw;
         margin: 0;
-
+        font-size: calc(11px + 0.4vw);
     }
 
     nav *{
@@ -174,28 +170,18 @@ nav *{
     #donate-btn {
         padding: 0.8vw 2vw 0.8vw 2vw;
         margin: 0.3vw 0.3vw 0.3vw 0.5vw;
+        font-size: calc(14px + 0.3vw)
     }
 
     nav * {
         margin: 0.5vh 1vw 0.5vh 1.2vw;
         letter-spacing: 0.01rem;
-        font-size: 11px;
     }
 
     #logo {
         margin: 0 auto 0 5vw;
-        width: 10vw;
+        width: calc(130px + 3vw);
         height: auto;
-        left: 1vw;
-    }
-}
-
-@media only screen and (min-width:680px) and (max-width:750px) {
-    #logo{
-
-        margin-left:0vw; !important
-        width: 10vw; !important
-        height: auto;
-        left: 0.5vw; !important
+        left: 0.8vw;
     }
 }
