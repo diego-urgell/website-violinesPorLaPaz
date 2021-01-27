@@ -61,6 +61,7 @@ section{
 
 #social-net{
     background-color: rgba(0, 194, 203,1);
+    cursor:pointer;
 }
 
 #social-net div{
@@ -128,4 +129,3 @@ section img{
         margin-left:2vw;
     }
 }
-

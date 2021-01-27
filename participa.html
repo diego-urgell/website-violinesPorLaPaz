@@ -12,15 +12,21 @@
     <script src="scripts/navBar.js"></script>
 </head>
 <body>
-    <iframe id="navBar" src="navBar.html"></iframe>
-
-    <div>
+    <script>
+        function loadContact(){
+            let insta = document.getElementById("insta-link");
+            let fb = document.getElementById("facebook-link");
+            insta.onclick = () => window.open("https://www.instagram.com/vfpmexico/");
+            fb.onclick = () => window.open("https://www.facebook.com/vfpmexico");
+        }
+        window.addEventListener("load", loadContact);
+    </script>
+    <div class="content">
         <section>
             <div class="comp-header-container" id="contacto-header">
                 <h2 class="comp-header-1"> Nuestro &nbsp;</h2>
                 <h2 class="comp-header-2"> contacto</h2>
             </div>
-            <!--img src="images/contactoRectangle.png"-->
             <div id="contacto-container">
                 <img src="images/contactoImage.jpg" id="contacto-image" >
                 <div id="contacto-row">
@@ -43,5 +49,8 @@
             </div>
         </section>
     </div>
+    <div class="curtain"></div>
+    <iframe id="navBar" src="navBar.html"></iframe>
+
 </body>
 </html>
