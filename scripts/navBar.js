@@ -1,10 +1,10 @@
-let baseurl = "website-violinesPorLaPaz";
-
 /**
  * This script manages the behaviour of the navigation bar, including the links, selected element, and opening and closing
  * of the side navbar in narrow windows.
  * Last modified: 26/01/2021
  */
+
+let baseurl = "";
 
 window.addEventListener("load", loadLinks);
 window.addEventListener("load", markSelected);
@@ -16,17 +16,16 @@ window.addEventListener("resize", changeNav);
  * corresponding to it.
  */
 function loadLinks(){
-    for(let key in window.location){
-        console.log(`Key: ${key}. Value: ${window.location[key]}`);
+    for(let key in document.body.children){
+        console.log(`Key: ${key}. Value: ${document.body.children[key]}`);
     }
-    let frame = document.getElementById("navBar").contentDocument;
+    let frame = iframeRef(document.getElementById("navBar"));
     let smallNav = frame.getElementById("small-navbar-button");
     let donate = frame.getElementById("donate-btn");
     smallNav.addEventListener("click", toggleNav)
     donate.onclick = () => window.open("https://www.paypal.com/donate/?hosted_button_id=QT4ZRWJ5Z28T6")
     let links = frame.getElementsByClassName("menuLink");
     for(let i = 0; i < links.length;i++) {
-        console.log(links[i].dataset.href);
         links[i].onclick = function(){
             window.sessionStorage["select"] = this.id;
             window.location.pathname = baseurl + this.dataset.href;
@@ -129,6 +128,11 @@ function closeNav(){
     frame.getElementsByTagName("nav")[0].style.padding = "";
 }
 
+function iframeRef( frameRef ) {
+    return frameRef.contentWindow
+        ? frameRef.contentWindow.document
+        : frameRef.contentDocument
+}
 
 /*
 function changeImg(id){

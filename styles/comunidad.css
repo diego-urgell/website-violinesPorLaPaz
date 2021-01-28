@@ -1,30 +1,133 @@
 
+section{
+    margin-top:15vh;
+    width:100%;
+    height:auto;
+    max-width:100%;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    text-align:center;
+}
+
+#apoyos{
+    width:100%;
+}
+
+#alianzasOrg-row{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    justify-items: center;
+    align-items: center;
+}
+
+#primarias{
+    display: grid;
+    box-sizing: border-box;
+    width:50%;
+    height:100%;
+    grid-template-columns: 100%;
+    padding: 2vw 5vw;
+    background-color: #00c2cb;
+}
+
+#primarias *{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#primarias-title{
+    align-self: start;
+    justify-self: center;
+}
+
+#primariasLista{
+    box-sizing: content-box;
+    padding-bottom: 9%;
+    align-self: center;
+    justify-self: start;
+}
+
+#primariasImg{
+    align-self: end;
+    justify-self:end;
+}
+
+#emprendedores{
+    box-sizing: border-box;
+    height:100%;
+    width:50%;
+    background-color: #0077B6;
+    padding: 2vw 5vw;
+}
+
+.titulo{
+    display:inline-block;
+    justify-self:center;
+    width:auto;
+    text-align: center;
+    line-height:100%;
+    padding: 3vh 8vw 2vh 8vw;
+    border-bottom: solid #0077B6 1vh;
+}
+#community{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-items:center;
+    align-items:center;
+}
+
+#apoyos-desc{
+    width:80%;
+}
+
 .cel-flex{
     padding: 0 0 50px 0;
     margin: 0 auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-items:center;
+    align-items:center;
+    justify-content: center;
+    align-content:center;
 }
+
 .columna-de2{
     width: 50%;
     box-sizing: border-box;
 }
+
 .columna-de3{
-    width: 33%;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    justify-items: center;
+    align-items: center;
+    align-content:center;
+    max-width: 30%;
     box-sizing: border-box;
 }
-.titulo{
-    text-align: center;
-    margin-top: 50px;
+
+#alianzas-row{
+    display: flex;
+    width: 80%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items:center;
 }
+
+
 .subtitulo{
     text-align: center;
 }
+
 .p-centro{
-    padding: 0 50px;
-    text-align: justify;
+    text-align:left;
+    width:80%;
 }
+
 .subtitulo sup{
     color: #0077B6;
     vertical-align: baseline;
@@ -41,16 +144,38 @@
     display: block;
     margin: auto;
 }
+
+.im2{
+    width:20vw;
+}
+
 .bordes{
     border: solid #fff 1px;
     margin: 40px 50px 0 50px;
     padding: 7px 0;
 }
+
+.corto{
+    display:inline-block;
+    box-sizing:border-box;
+    padding: 1vw 3vw 1vw 3vw;
+    min-width: 15vw;
+    margin-top: 4vh;
+}
+
 .borde-izq{
     border-left: solid #0077B6 5px;
     padding: 0;
     margin: 35px 0 100px 30px;
 }
+
+#apoyos-exp{
+    width:75%;
+    border-left: solid #0077B6 0.7vw;
+    margin-top: 6vh;
+    text-align:left;
+}
+
 .borde-izq-p{
     padding-left: 20px;
 }
@@ -72,11 +197,7 @@
 .im{
     size: 100px;
 }
-.im2{
-    height: 100px;
-    padding-top: 20px;
-    justify-content: center;
-}
+
 
 #logo{
     height: 50px;
@@ -94,12 +215,176 @@
     padding-left: 190px;
 }
 
+#tipos-apoyo{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#collage{
+    display:grid;
+    width: 80vw;
+    max-width: 100vw;
+    grid-template-columns: 100%;
+    justify-self: center;
+    height: 50vw;
+    margin: 15vh auto;
+}
+
+#collage *{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#vol-image{
+    width: 40vw;
+    max-width: 40vw;
+    justify-self: start;
+    align-self: start;
+    background-color: #0077B6;
+    padding: 1vw;
+}
+
+#class-image{
+    justify-self: end;
+    align-self: end;
+    width: 40vw;
+    max-width: 40vw;
+    background-color: #00C2CB;
+    padding: 1vw;
+}
+
+#vol-image img, #class-image img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.test{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-content:center;
+    width:100vw;
+    box-sizing: border-box;
+    padding: 5vw;
+}
+
+.test-text{
+    width:40%;
+    padding:3vw;
+}
+
+#test1{
+    text-align:left;
+    background-color: #00C2CB;
+    color:white;
+}
+
+#test2{
+    text-align:right;
+    background-color: #C0F0F2;
+    color:#6c757d;
+}
+
+.test-img{
+    width:40%;
+    max-width:40%;
+}
+
+.test-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
 @media (max-width: 975px) {
     .columna-de3{
-        width: 100%;
-        margin-bottom: 10px;
+        max-width: 40vw;
+        width:40vw;
+        margin-bottom:7vh;
     }
+
+    .im2{
+        width:100%;
+    }
+
     .marg-btm2{
         margin-bottom: 25px;
     }
+
+    .corto{
+        padding: 2vw 12vw 2vw 12vw;
+    }
+
+    .cel-flex{
+        padding: 0;
+        width:100%;
+    }
+
+    #alianzas-row{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content:center;
+        justify-items: center;
+        align-items: center;
+        text-align:center;
+    }
+
+    #alianzasOrg-row{
+        flex-flow: column nowrap;
+    }
+
+    #primarias{
+        width: 100%;
+        height: 40vh;
+        padding: 4vw 8vw;
+    }
+
+    #emprendedores{
+        width: 100%;
+        padding: 2vw 8vw;
+    }
+
+    #primariasLista{
+        padding-bottom: 0;
+    }
+
+    #tipos-apoyo{
+        margin: 0;
+        flex-flow: column nowrap;
+    }
+
+    #collage{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100vh;
+        max-width: 100vw;
+        justify-content: center;
+        align-content: center;
+        max-height: 100vh;
+        height:auto;
+    }
+
+    #collage *{
+        width: 80vh;
+        margin: auto;
+    }
+
+    #vol-image, #class-image{
+        width: 80vw;
+        max-width: 80vw;
+    }
+
+    .test{
+        flex-flow: column nowrap;
+    }
+
+    .test-text, .test-img{
+        max-width:80%;
+        width: 80%;
+        margin:auto;
+    }
+
 }
+

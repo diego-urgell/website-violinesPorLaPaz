@@ -169,7 +169,6 @@ section{
     justify-self:center;
     width:auto;
     text-align: center;
-    margin-top: 50px;
     line-height:100%;
     padding: 3vh 8vw 2vh 8vw;
     border-bottom: solid #0077B6 1vh;
@@ -430,8 +429,7 @@ section{
     }
 
     ul, li{
-        width:30vw; !important
-        max-width:30vw; !important
+        max-width:50vw; !important
     }
 
 

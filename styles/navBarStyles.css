@@ -26,11 +26,11 @@ nav *{
 
 #logo{
     margin:0 auto 0 5vw;
-    width:170px;
+    width: calc(120px + 0.5vw);
     height:auto;
     position:fixed;
     top:0px;
-    left:5vw;
+    left:2vw;
 }
 
 #nav-control{

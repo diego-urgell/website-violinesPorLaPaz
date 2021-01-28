@@ -8,17 +8,19 @@ html{
 
 body{
     overflow-x:hidden;
-    transform-style:preserve-3d;
+
 }
 
 iframe{
-    position:fixed;
-    border:none;
     top:0;
     left:0;
+    position:fixed;
+    border:none;
+
     height:30vh;
     width:100vw;
 }
+
 
 
 .curtain{
@@ -33,9 +35,15 @@ iframe{
 
 
 .content{
+    margin-top:15vh;
     margin-right:0;
     transition: 0.7s;
 }
+
+.content + section{
+    margin-top:0vh; !important
+}
+
 
 
 /*
@@ -91,4 +99,11 @@ h6{
     padding: 0vh 8vw 0vh 8vw;
     margin: 1vh 10vw 1vh 10vw;
     border-bottom: solid #0077B6 5px;
+}
+
+@media only screen and (max-width:900px){
+    .content{
+        margin-top: 25vh;
+    }
+
 }
