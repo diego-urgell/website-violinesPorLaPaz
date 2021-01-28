@@ -16,7 +16,6 @@ iframe{
     left:0;
     position:fixed;
     border:none;
-
     height:30vh;
     width:100vw;
 }
@@ -37,7 +36,7 @@ iframe{
 .content{
     margin-top:15vh;
     margin-right:0;
-    transition: 0.7s;
+    transition: 0.7s, font-size 0s ;
 }
 
 .content + section{

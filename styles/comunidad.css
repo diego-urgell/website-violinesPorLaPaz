@@ -213,6 +213,8 @@ section{
 #im-der{
     padding-bottom: 25px;
     padding-left: 190px;
+    width: 15vw;
+    height:auto;
 }
 
 #tipos-apoyo{
@@ -259,18 +261,19 @@ section{
 }
 
 .test{
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
-    justify-content:center;
-    align-content:center;
-    width:100vw;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
     box-sizing: border-box;
-    padding: 5vw;
+    padding: 3vw 6vw;
 }
 
 .test-text{
-    width:40%;
-    padding:3vw;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 3vw;
 }
 
 #test1{
@@ -384,6 +387,10 @@ section{
         max-width:80%;
         width: 80%;
         margin:auto;
+    }
+
+    #im-der{
+        width:20vw;
     }
 
 }
