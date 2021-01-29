@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
     <link rel = "stylesheet" href = "styles/generalStyles.css">
     <link rel = "stylesheet" href = "styles/modeloDeAprendizaje.css">
-    <script src="scripts/navBar.js" async></script>
+    <script>
+        window.sessionStorage.setItem("select", "model");
+    </script>
+    <script src="scripts/navBar.js"></script>
 </head>
 <body>
 
@@ -142,6 +145,7 @@
 
     <div class="curtain"></div>
     <iframe id="navBar" src="navBar.html"></iframe>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/footer.php";?>
 
 </body>
 </html>

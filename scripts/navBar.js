@@ -1,10 +1,12 @@
-/**
+
+
+/*
  * This script manages the behaviour of the navigation bar, including the links, selected element, and opening and closing
  * of the side navbar in narrow windows.
  * Last modified: 26/01/2021
  */
 
-let baseurl = "website-violinesPorLaPaz";
+let baseurl = "";
 
 window.addEventListener("load", loadLinks);
 window.addEventListener("load", markSelected);
@@ -19,6 +21,8 @@ function loadLinks(){
     for(let key in document.body.children){
         console.log(`Key: ${key}. Value: ${document.body.children[key]}`);
     }
+    document.getElementById("insta-footer").onclick = () => window.open("https://www.instagram.com/vfpmexico/");
+    document.getElementById("fb-footer").onclick = () => window.open("https://www.facebook.com/vfpmexico");
     let frame = iframeRef(document.getElementById("navBar"));
     let smallNav = frame.getElementById("small-navbar-button");
     let donate = frame.getElementById("donate-btn");
@@ -231,4 +235,5 @@ function iframeRef( frameRef ) {
         : frameRef.contentDocument
 }
  */
+
 

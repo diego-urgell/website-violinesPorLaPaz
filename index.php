@@ -11,8 +11,13 @@
     <link rel = "stylesheet" href = "styles/indexStyles.css">
     <script>
         window.sessionStorage.setItem("select", "home");
+        function loadBtn(){
+            document.getElementById("labor-button").onclick = () => window.location.pathname = "modeloDeAprendizaje.php";
+            document.getElementById("historia-button").onclick = () => window.location.pathname = "comunidad.php";
+        }
+        window.addEventListener("load", loadBtn);
     </script>
-    <script src="scripts/navBar.js" async></script>
+    <script src="scripts/navBar.js"></script>
 </head>
 <body>
 
@@ -100,5 +105,7 @@
     </div>
     <div class="curtain"></div>
     <iframe id="navBar" src="navBar.html"></iframe>
+    <?php require $_SERVER['DOCUMENT_ROOT']."/footer.php";?>
+
 </body>
 </html>

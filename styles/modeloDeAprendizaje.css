@@ -46,7 +46,7 @@ section{
     display:grid;
     grid-template-columns:100%;
     grid-template-rows:100%;
-    min-height:90vh;
+    min-height:60vw;
     width:90vw;
     max-width:90vw;
     align-self:center;

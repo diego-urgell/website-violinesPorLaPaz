@@ -147,6 +147,7 @@ section{
 
 .im2{
     width:20vw;
+    max-width:20vw;
 }
 
 .bordes{
@@ -299,6 +300,10 @@ section{
     object-fit:cover;
 }
 
+#logo_tec{
+    width:13vw;
+}
+
 
 
 @media (max-width: 975px) {
@@ -308,8 +313,13 @@ section{
         margin-bottom:7vh;
     }
 
+    #logo_tec{
+        width:30vw;
+    }
+
     .im2{
         width:100%;
+        max-width:100%;
     }
 
     .marg-btm2{

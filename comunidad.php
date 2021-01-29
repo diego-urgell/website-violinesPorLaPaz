@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
     <link rel = "stylesheet" href = "styles/generalStyles.css">
     <link rel = "stylesheet" href = "styles/comunidad.css">
-    <script src="scripts/navBar.js" async></script>
+    <script>
+        window.sessionStorage.setItem("select", "community");
+    </script>
+    <script src="scripts/navBar.js"></script>
 </head>
 <body>
 
@@ -65,7 +68,7 @@
             </span>
             <span id="alianzas-row" class="cel-flex marg-top marg-btm">
                 <div class="columna-de3">
-                    <img class="im2" src="images/tecnologico-de-monterrey-blue.png" alt="Logo del Tec de Monterrey">
+                    <img id="logo_tec" class="im2" src="images/logo_tec.png"  alt="Logo del Tec de Monterrey">
                 </div>
                 <div class="columna-de3">
                     <img class="im2" src="images/UP_Logo.png" alt="Logo de la Uni Panamericana">
@@ -150,5 +153,7 @@
 
     <div class="curtain"></div>
     <iframe id="navBar" src="navBar.html"></iframe>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/footer.php";?>
+
 </body>
 </html>

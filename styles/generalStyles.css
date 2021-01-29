@@ -6,6 +6,7 @@ html{
     overflow-x:hidden;
 }
 
+
 body{
     overflow-x:hidden;
 
@@ -41,6 +42,97 @@ iframe{
 
 .content + section{
     margin-top:0vh; !important
+}
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    width:100%;
+}
+
+#copyright{
+    justify-self:flex-start;
+    box-sizing: border-box;
+    align-self: end;
+    font-size: calc(13px + 0.3vw);
+    margin-left: 16vw;
+}
+#foot-row{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    width:100vw;
+    height: auto;
+    padding: 4vw 5vw 4vw 5vw;
+    background-color: #00C2CB;
+    margin-top: 15vh;
+    letter-spacing: 0.01rem;
+}
+
+#mapa{
+    box-sizing: border-box;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    color: white;
+    width:40vw;
+    height:100%;
+    padding: 0vw 4vw 3vw 10vw;
+}
+
+.foot-link{
+    font-size: calc(12px + 0.3vw);
+    font-weight: lighter;
+    font-family: "Lato";
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin: 1vw;
+    border-bottom: #C0F0F2 solid 1px;
+    cursor: pointer;
+}
+
+#redes-footer{
+    box-sizing: border-box;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:start;
+    justify-content:center;
+    width:20vw;
+    height:auto;
+}
+
+#redes-footer img{
+    width: 5vw;
+    height:5vw;
+    margin:1vw;
+    object-fit:contain;
+    cursor: pointer;
+}
+
+#logo-footer{
+    width: 40vw;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    justify-items: start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 12vw;
+}
+
+#logo-footer img{
+    width:15vw;
+    height:auto;
+    object-fit:contain;
+    margin-bottom: 2vw;
+}
+
+#logo-footer span{
+    font-size: calc(12px + 0.3vw);
+    color: white;
+    display: inline-block;
 }
 
 
@@ -100,9 +192,34 @@ h6{
     border-bottom: solid #0077B6 5px;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1090px){
     .content{
         margin-top: 25vh;
     }
+
+    #foot-row{
+        flex-flow: column nowrap;
+    }
+
+    #mapa, #redes-footer, #logo-footer{
+        width:100%;
+    }
+
+    #redes-footer img{
+        width:10vw;
+        height:10vw;
+        margin-bottom: 8vw;
+    }
+
+    #logo-footer{
+        padding-right: 0vw;
+    }
+
+    #logo-footer img{
+        width:40%;
+    }
+
+
+
 
 }
