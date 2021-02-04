@@ -12,12 +12,11 @@ body{
 
 }
 
-iframe{
-    top:0;
-    left:0;
+nav{
     position:fixed;
     border:none;
-    height:30vh;
+    box-sizing:border-box;
+    max-height: 5vw;
     width:100vw;
 }
 

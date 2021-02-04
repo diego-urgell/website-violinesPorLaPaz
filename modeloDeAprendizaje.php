@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Modelo de Aprendizaje | Fundación Violines por la Paz</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
     <link rel = "stylesheet" href = "styles/generalStyles.css">
+    <link rel = "stylesheet" href = "styles/navBarStyles.css">
     <link rel = "stylesheet" href = "styles/modeloDeAprendizaje.css">
     <script>
-        window.sessionStorage.setItem("select", "model");
+        window.sessionStorage.setItem("select", "model-link");
     </script>
     <script src="scripts/navBar.js"></script>
 </head>
@@ -144,7 +145,9 @@
     </div>
 
     <div class="curtain"></div>
-    <iframe id="navBar" src="navBar.html"></iframe>
+    <div id="navBar">
+        <?php require $_SERVER['DOCUMENT_ROOT']."/navBar.php";?>
+    </div>
     <?php include $_SERVER['DOCUMENT_ROOT']."/footer.php";?>
 
 </body>

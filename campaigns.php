@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
     <link rel = "stylesheet" href = "styles/generalStyles.css">
+    <link rel = "stylesheet" href = "styles/navBarStyles.css">
     <link rel = "stylesheet" href = "styles/campaigns.css">
     <script>
-        window.sessionStorage.setItem("select", "campaigns");
+        window.sessionStorage.setItem("select", "campaigns-link");
     </script>
     <script src="scripts/navBar.js"></script>
 </head>
@@ -44,8 +45,9 @@
         </section>
     </div>
     <div class="curtain"></div>
-    <iframe id="navBar" src="navBar.html"></iframe>
-
+    <div id="navBar">
+        <?php require $_SERVER['DOCUMENT_ROOT']."/navBar.php";?>
+    </div>
     <?php include $_SERVER['DOCUMENT_ROOT']."/footer.php";?>
 
 </body>

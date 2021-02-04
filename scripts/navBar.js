@@ -23,18 +23,20 @@ function loadLinks(){
     }
     document.getElementById("insta-footer").onclick = () => window.open("https://www.instagram.com/vfpmexico/");
     document.getElementById("fb-footer").onclick = () => window.open("https://www.facebook.com/vfpmexico");
-    let frame = iframeRef(document.getElementById("navBar"));
-    let smallNav = frame.getElementById("small-navbar-button");
-    let donate = frame.getElementById("donate-btn");
+    let smallNav = document.getElementById("small-navbar-button");
+    let donate = document.getElementById("donate-btn");
     smallNav.addEventListener("click", toggleNav)
     donate.onclick = () => window.open("https://www.paypal.com/donate/?hosted_button_id=QT4ZRWJ5Z28T6")
-    let links = frame.getElementsByClassName("menuLink");
+    let links = document.getElementsByClassName("menuLink");
+    /*
     for(let i = 0; i < links.length;i++) {
         links[i].onclick = function(){
             window.sessionStorage["select"] = this.id;
             window.location.pathname = baseurl + this.dataset.href;
         }
     }
+
+     */
 };
 
 /**
@@ -43,11 +45,10 @@ function loadLinks(){
  * and then changes to landscape. Executed every time the window is resized.
  */
 function changeNav(){
-    let frame = document.getElementById("navBar").contentDocument;
-    let status = frame.getElementById("large-navbar").dataset.status;
+    let status = document.getElementById("large-navbar").dataset.status;
     let content = document.getElementsByClassName("content")[0];
     if(status == "open" && window.innerWidth >= 990){
-        frame.getElementById("large-navbar").dataset.status = "closed";
+        document.getElementById("large-navbar").dataset.status = "closed";
         content.removeEventListener("click", closeNav)
         closeNav();
     }
@@ -59,16 +60,15 @@ function changeNav(){
  * (this is stored as a dataset attribute in the html), and then executing either open or closing functions.
  */
 function toggleNav(){
-    let frame = document.getElementById("navBar").contentDocument;
-    let status = frame.getElementById("large-navbar").dataset.status;
+    let status = document.getElementById("large-navbar").dataset.status;
     let content = document.getElementsByClassName("content")[0];
     if(status == "open"){
-        frame.getElementById("large-navbar").dataset.status = "closed";
+        document.getElementById("large-navbar").dataset.status = "closed";
         content.removeEventListener("click", closeNav)
         closeNav();
     }
     else{
-        frame.getElementById("large-navbar").dataset.status = "open";
+        document.getElementById("large-navbar").dataset.status = "open";
         content.addEventListener("click", closeNav);
         openNav();
 
@@ -80,10 +80,9 @@ function toggleNav(){
  * just visited by checking the session storage.
  */
 function markSelected(){
-    let frame = document.getElementById("navBar").contentDocument;
-    let cont = frame.getElementsByClassName("selected");
+    let cont = document.getElementsByClassName("selected");
     if (cont.length > 0) cont[0].classList.remove("selected");
-    frame.getElementById(window.sessionStorage.getItem("select")).classList.add("selected");
+    document.getElementById(window.sessionStorage.getItem("select")).classList.add("selected");
 };
 
 /**
@@ -91,8 +90,7 @@ function markSelected(){
  * navbar is actually in an iframe element.
  */
 function openNav(){
-    let frame = document.getElementById("navBar").contentDocument;
-    let nav = frame.getElementById("large-navbar");
+    let nav = document.getElementById("large-navbar");
     let content = document.getElementsByClassName("content")[0];
     let curtain = document.getElementsByClassName("curtain")[0];
     curtain.style.backgroundColor="rgba(0, 0, 0, .8)"
@@ -100,10 +98,9 @@ function openNav(){
     content.style.transform="translate3d(-57vw, 0, 0)"; //Translate 3d is used to avoid the content being moved to the front.
     document.getElementById("navBar").style.height = "100vh";
     nav.getElementsByClassName("selected")[0].style.borderBottomWidth = "1vh";
-    frame.getElementById("logo").style.display = "none";
-    frame.getElementById("nav-control").style.marginRight = "60vw"
-    frame.getElementsByTagName("body")[0].appendChild(nav);
-    frame.getElementsByTagName("nav")[0].style.padding = "2vh 1vw";
+    document.getElementById("logo").style.display = "none";
+    document.getElementById("nav-control").style.marginRight = "60vw"
+    document.getElementsByTagName("body")[0].appendChild(nav);
     nav.style.display = "flex";
     nav.style.height = "100vh";
     nav.style.width = "60vw";
@@ -115,8 +112,7 @@ function openNav(){
  * so that the css styles are used instead.
  */
 function closeNav(){
-    let frame = document.getElementById("navBar").contentDocument;
-    let nav = frame.getElementById("large-navbar");
+    let nav = document.getElementById("large-navbar");
     let content = document.getElementsByClassName("content")[0];
     let curtain = document.getElementsByClassName("curtain")[0];
     curtain.style.display = "none";
@@ -126,16 +122,10 @@ function closeNav(){
     nav.style.display = "";
     document.getElementById("navBar").style.height = "";
     nav.getElementsByClassName("selected")[0].style.borderBottomWidth = "";
-    frame.getElementById("logo").style.display = "initial";
-    frame.getElementById("nav-control").style.marginRight = "0";
-    frame.getElementsByTagName("nav")[0].appendChild(nav);
-    frame.getElementsByTagName("nav")[0].style.padding = "";
-}
-
-function iframeRef( frameRef ) {
-    return frameRef.contentWindow
-        ? frameRef.contentWindow.document
-        : frameRef.contentDocument
+    document.getElementById("logo").style.display = "initial";
+    document.getElementById("nav-control").style.marginRight = "0";
+    document.getElementsByTagName("nav")[0].appendChild(nav);
+    document.getElementsByTagName("nav")[0].style.padding = "";
 }
 
 /*
