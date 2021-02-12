@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Modelo de Aprendizaje | Fundación Violines por la Paz</title>
+    <meta name="description" content="En Violines por La Paz A.C buscamos que todos los niños de México tengan una eduación
+                                        integral y balanceada. Ofrecemos talleres de arte, deportes, idiomas y valores.
+                                        Únete a la causa, juntos podemos mejorar el futuro de nuestro país.">
+    <meta name="keywords" content="Violines Por La Paz, México, niños, educación, arte, cultura, vfpmexico, deportes, valores">
+    <meta name="author" content="vfpmexico">
+    <title> Violines Por la  Paz | Modelo de Aprendizaje </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
-    <link rel = "stylesheet" href = "styles/generalStyles.css">
-    <link rel = "stylesheet" href = "styles/navBarStyles.css">
-    <link rel = "stylesheet" href = "styles/modeloDeAprendizaje.css">
+
+    <link rel="preload" href="styles/generalStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/navBarStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/modeloDeAprendizaje.css" as="style" onload="this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="styles/generalStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/navBarStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/modeloDeAprendizaje.css"></noscript>
     <script>
         window.sessionStorage.setItem("select", "model-link");
     </script>
-    <script src="scripts/navBar.js"></script>
+    <script src="scripts/navBar.js" async></script>
+    <script src="scripts/lazyLoading.js" async></script>
 </head>
 <body>
 
@@ -54,7 +66,7 @@
             <section id="language" class="cel-flex pad-top">
                 <!-- Lado izquierdo, imagen -->
                 <div class="columna-centrada">
-                    <img class="im-lado" id="circ-azul" src="images/idiomas.jpg" alt="Idiomas">
+                    <img class="im-lado lazy" id="circ-azul" data-src="images/idiomas.jpg" alt="Idiomas">
                 </div>
                 <!-- Lado derecho, texto -->
                 <div class="columna-izq">
@@ -87,7 +99,7 @@
                 </div>
                 <!-- Lado derecho, imagen -->
                 <div class="columna-centrada">
-                    <img class="im-cuadro" src="images/ninasDeportes.jpg" alt="Deportes">
+                    <img class="im-cuadro lazy" data-src="images/ninasDeportes.jpg" alt="Deportes">
                 </div>
             </section>
 
@@ -95,12 +107,12 @@
             <section class="cel-flex" id="desarrollo">
                 <!-- Lado izquierdo, imagen -->
                 <div class="columna-centrada">
-                    <img class="im-lado" src="images/nina-dibujo.jpg" alt="Desarrollo personal">
+                    <img class="im-lado lazy" data-src="images/nina-dibujo.jpg" alt="Desarrollo personal">
                 </div>
                 <!-- Lado derecho, texto -->
                 <span class="columna-izq">
                     <h2 id="desarrollo-sub" class="gris marg-btm3">Desarrollo personal</h2>
-                    <img id="lin-cua" src="images/barra_cuadro.png" alt="Barra para resaltar título">
+                    <img id="lin-cua" data-src="images/barra_cuadro.png" class="lazy" alt="Barra para resaltar título">
                     <p class="p-centro gris">
                         Para que nuestros alumnos tengan una formación integral, el programa incluye talleres que los invitan a reflexionar acerca de sus derechos y responsabilidades en la sociedad. Con este objetivo se imparten las siguientes clases:
                     </p>
@@ -116,7 +128,7 @@
             <section id="artes">
                 <!-- Lado derecho, imagen -->
                 <div id="artes-image-container">
-                    <img id="artes-image" src="images/dibujo.jpg" alt="Dibujo">
+                    <img id="artes-image" data-src="images/dibujo.jpg" class="lazy" alt="Dibujo">
                 </div>
                 <!-- Lado izquierdo, texto -->
                 <div id="artes-container" class="columna-izq">

@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campañas | Fundación Violines Por la  Paz</title>
+    <meta name="description" content="En Violines por La Paz A.C buscamos que todos los niños de México tengan una eduación
+                                        integral y balanceada. Ofrecemos talleres de arte, deportes, idiomas y valores.
+                                        Únete a la causa, juntos podemos mejorar el futuro de nuestro país.">
+    <meta name="keywords" content="Violines Por La Paz, México, niños, educación, arte, cultura, vfpmexico, deportes, valores">
+    <meta name="author" content="vfpmexico">
+    <title> Violines Por la Paz | Campañas </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://use.typekit.net">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
-    <link rel = "stylesheet" href = "styles/generalStyles.css">
-    <link rel = "stylesheet" href = "styles/navBarStyles.css">
-    <link rel = "stylesheet" href = "styles/campaigns.css">
+
+    <link rel="preload" href="styles/generalStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/navBarStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/campaigns.css" as="style" onload="this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="styles/generalStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/navBarStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/campaigns.css"></noscript>
+
     <script>
         window.sessionStorage.setItem("select", "campaigns-link");
     </script>
-    <script src="scripts/navBar.js"></script>
+    <script src="scripts/navBar.js" async></script>
+    <script src="scripts/lazyLoading.js" async></script>
 </head>
 <body>
     <div class="content">

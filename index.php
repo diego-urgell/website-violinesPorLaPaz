@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Violines por La Paz A.C buscamos que todos los niños de México tengan una eduación
+                                        integral y balanceada. Ofrecemos talleres de arte, deportes, idiomas y valores.
+                                        Únete a la causa, juntos podemos mejorar el futuro de nuestro país.">
+    <meta name="keywords" content="Violines Por La Paz, México, niños, educación, arte, cultura, vfpmexico, deportes, valores">
+    <meta name="author" content="vfpmexico">
     <title> Violines Por La Paz </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
-    <link rel = "stylesheet" href = "styles/generalStyles.css">
-    <link rel = "stylesheet" href = "styles/navBarStyles.css">
-    <link rel = "stylesheet" href = "styles/indexStyles.css">
+
+    <link rel="preload" href="styles/generalStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/navBarStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/indexStyles.css" as="style" onload="this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="styles/generalStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/navBarStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/indexStyles.css"></noscript>
     <script>
         window.sessionStorage.setItem("select", "home-link");
         function loadBtn(){
@@ -18,14 +29,15 @@
         }
         window.addEventListener("load", loadBtn);
     </script>
-    <script src="scripts/navBar.js"></script>
+    <script src="scripts/navBar.js" async></script>
+    <script src="scripts/lazyLoading.js" async></script>
 </head>
 <body>
 
     <div class="content">
         <section id="main-name">
             <div>
-                <img class="image" src="images/violinesPorLaPaz.png">
+                <img class="image" src="images/violinesPorLaPaz.png" alt="Comunidad de Violines">
             </div>
             <p id="slogan"> ¡Todos tenemos talento, solo falta encontrarlo! </p>
         </section>
@@ -43,7 +55,7 @@
                 </span>
             </div>
             <div id="labor-image-container">
-                <img src="images/labor.jpg" id="labor-image" class="image">
+                <img data-src="images/labor.jpg" id="labor-image" class="image lazy" alt="Niños pintando">
             </div>
         </section>
 
@@ -55,7 +67,7 @@
             <br>
             <div id="historia-container">
                 <div id="historia-image-container">
-                    <img src="images/historia.jpg" class="image" id="historia-image">
+                    <img data-src="images/historia.jpg" class="image lazy" id="historia-image" alt="Niños jugando">
                 </div>
                 <div id="historia-text">
                     <p>
@@ -88,7 +100,7 @@
                 </div>
             </div>
             <div id="mision-image-container">
-                <img id="mision-image" src="images/ninos-salon.png">
+                <img id="mision-image" data-src="images/ninos-salon.png" class="lazy" alt="Niños en clase">
             </div>
         </section>
 
@@ -100,7 +112,7 @@
                 </p>
             </div>
             <div id="vision-image">
-                <img src="images/visionImage.png">
+                <img data-src="images/visionImage.png" class = "lazy" alt="Disciplinas variadas">
             </div>
         </section>
     </div>

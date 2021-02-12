@@ -6,4 +6,4 @@ I became fascinated by such a noble cause, and decided to help them with the dev
 
 Even tough I'm not a designer, for this project I had to learn and apply some basic design principles, focusing on the user experience. In order to create a product that portrayed the organization's identity, several prototypes were created and modified until the client was satisfied. Later on, the interface was built using HTML, CSS, JavaScript and some PHP. 
 
-I really enjoyed working in this project, since it allowed me to apply my skills in order to benefit my community. I look forward to volunteering more in the creation of software for this kind of organizations. The website is currently being tested [here](https://diegourgell.heliohost.us/index.php). In the near future, it will be deployed. 
+I really enjoyed working in this project, since it allowed me to apply my skills in order to benefit my community. I look forward to volunteering more in the creation of software for this kind of organizations. The website is currently deployed [here](https://vfpmexico.org).

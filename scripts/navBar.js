@@ -1,12 +1,8 @@
-
-
 /*
  * This script manages the behaviour of the navigation bar, including the links, selected element, and opening and closing
  * of the side navbar in narrow windows.
  * Last modified: 26/01/2021
  */
-
-let baseurl = "";
 
 window.addEventListener("load", loadLinks);
 window.addEventListener("load", markSelected);
@@ -27,16 +23,6 @@ function loadLinks(){
     let donate = document.getElementById("donate-btn");
     smallNav.addEventListener("click", toggleNav)
     donate.onclick = () => window.open("https://www.paypal.com/donate/?hosted_button_id=QT4ZRWJ5Z28T6")
-    let links = document.getElementsByClassName("menuLink");
-    /*
-    for(let i = 0; i < links.length;i++) {
-        links[i].onclick = function(){
-            window.sessionStorage["select"] = this.id;
-            window.location.pathname = baseurl + this.dataset.href;
-        }
-    }
-
-     */
 };
 
 /**
@@ -71,7 +57,6 @@ function toggleNav(){
         document.getElementById("large-navbar").dataset.status = "open";
         content.addEventListener("click", closeNav);
         openNav();
-
     }
 }
 
@@ -104,7 +89,6 @@ function openNav(){
     nav.style.display = "flex";
     nav.style.height = "100vh";
     nav.style.width = "60vw";
-
 }
 
 /**
@@ -127,103 +111,3 @@ function closeNav(){
     document.getElementsByTagName("nav")[0].appendChild(nav);
     document.getElementsByTagName("nav")[0].style.padding = "";
 }
-
-/*
-function changeImg(id){
-    if (screen.width >= 580) {
-        loadImage(id, "images/violinesPorLaPaz.png");
-        document.getElementById(id).src = "images/violinesPorLaPaz.png";
-    } else {
-        document.getElementById(id).src = "images/quienesNinosTitleMobile.png";
-    }
-}
-
-function loadImage(elem, path){
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function(){
-        if (this.readyState == 4 && this.status == 200){
-            return true;
-        }
-        else return false;
-    }
-    xhttp.open("GET", path, false);
-    xhttp.send();
-    console.log(xhttp.responseURL);
-    return xhttp.responseURL;
-}
-
-changeImg("quienesNinosImage");
-window.addEventListener("resize", changeImg("quienesNinosImage"));
-*/
-
-/*
-function calcNavOffset(){
-    let childs = document.body.children;
-    let navBar = childs[0];
-    let firstSection = document.getElementById("main-name");
-
-    for(let key in firstSection){
-        console.log(`Key: ${key}. Value: ${firstSection[key]}`);
-        if (key == "height") {
-            console.log(`Key: ${key}. Value: ${firstSection.style[key]}`);
-        }
-    }
-
-
-    firstSection.style.marginTop = "100px"
-    console.log(navBar.offsetHeight);
-    console.log(firstSection.style.marginTop);
-    console.log(navBar.style.marginTop);
-
-}
-
-window.addEventListener("load", calcNavOffset);
-*/
-
-
-
-/*
-function tmp() {
-    let contact = document.getElementById("navBar");
-    for (let key in contact) {
-        console.log(`Key: ${key}. Value: ${contact[key]}`);
-    }
-}
-*/
-
-/*
-    for (let key in windowcontact) {
-        console.log(`Key: ${key}. Value: ${window.location[key]}`);
-    }
-
- */
-
-
-/*
-frame = document.getElementById("navBar").contentDocument;
-contact = frame.getElementById("contact");
-for (let key in frame) {
-    console.log(`Key: ${key}. Value: ${frame[key]}`)
-}
-
- */
-
-/*
-    frame.getElementsByClassName("selected")[0].classList.remove("selected");
-
-    let classes = frame.getElementsByClassName("selected");
-classes[0].classList.remove("selected");
-console.log(classes.length);
-for(let key in classes){
-    console.log(`Key: ${key}. Value: ${classes[key]}`)
-}
-contact.classList.add("selected");
-
-function iframeRef( frameRef ) {
-    return frameRef.contentWindow
-        ? frameRef.contentWindow.document
-        : frameRef.contentDocument
-}
- */
-
-

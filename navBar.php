@@ -4,7 +4,7 @@ echo <<< 'end'
     <nav>
         <div id="nav-control">
             <span id="donate-btn"> <a> Donar </a> </span>
-            <img id="small-navbar-button" src="images/navBarButton.png">
+            <img id="small-navbar-button" src="images/navBarButton.png" alt="Abrir barra">
         </div>
         <div id="large-navbar" data-state="closed">
             <a id="home-link" href="index.php" class="menuLink"> Quiénes somos? </a>
@@ -14,5 +14,5 @@ echo <<< 'end'
             <a id="contact-link" href="participa.php" class="menuLink"> Participa </a>
         </div>
     </nav>
-    <img src="images/banner_f.png" id="logo">
+    <img src="images/banner_f.png" id="logo" alt="Logo de Violines">
 end;

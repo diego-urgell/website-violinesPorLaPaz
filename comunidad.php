@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="En Violines por La Paz A.C buscamos que todos los niños de México tengan una eduación
+                                        integral y balanceada. Ofrecemos talleres de arte, deportes, idiomas y valores.
+                                        Únete a la causa, juntos podemos mejorar el futuro de nuestro país.">
+    <meta name="keywords" content="Violines Por La Paz, México, niños, educación, arte, cultura, vfpmexico, deportes, valores">
+    <meta name="author" content="vfpmexico">
+    <title>Violines Por la  Paz | Comunidad </title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iwj8rkr.css">
-    <link rel = "stylesheet" href = "styles/generalStyles.css">
-    <link rel = "stylesheet" href = "styles/navBarStyles.css">
-    <link rel = "stylesheet" href = "styles/comunidad.css">
+
+    <link rel="preload" href="styles/generalStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/navBarStyles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="styles/comunidad.css" as="style" onload="this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="styles/generalStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/navBarStyles.css"></noscript>
+    <noscript><link rel="stylesheet" href="styles/comunidad.css"></noscript>
+
     <script>
         window.sessionStorage.setItem("select", "community-link");
     </script>
-    <script src="scripts/navBar.js"></script>
+    <script src="scripts/navBar.js" async></script>
+    <script src="scripts/lazyLoading.js" async></script>
 </head>
 <body>
 
@@ -69,13 +83,13 @@
             </span>
             <span id="alianzas-row" class="cel-flex marg-top marg-btm">
                 <div class="columna-de3">
-                    <img id="logo_tec" class="im2" src="images/logo_tec.png"  alt="Logo del Tec de Monterrey">
+                    <img id="logo_tec" class="im2 lazy" data-src="images/logo_tec.png"  alt="Logo del Tec de Monterrey">
                 </div>
                 <div class="columna-de3">
-                    <img class="im2" src="images/UP_Logo.png" alt="Logo de la Uni Panamericana">
+                    <img class="im2 lazy" data-src="images/UP_Logo.png" alt="Logo de la Uni Panamericana">
                 </div>
                 <div class="columna-de3">
-                    <img class="im2" src="images/ebc_logo.png" alt="Logo de la Esc Bancaria y Comercial">
+                    <img class="im2 lazy" data-src="images/ebc_logo.png" alt="Logo de la Esc Bancaria y Comercial">
                 </div>
             </span>
 
@@ -92,7 +106,7 @@
                         </ul>
                     </div>
                     <div id="primariasImg">
-                        <img class="im" id="im-der" src="images/mochilaComunidad.png" alt="Mochila y útiles escolares">
+                        <img class="im lazy" id="im-der" data-src="images/mochilaComunidad.png" alt="Mochila y útiles escolares">
                     </div>
                 </div>
                 <div id="emprendedores">
@@ -114,10 +128,10 @@
         <!-- Sección de imágenes sobrepuestas -->
         <section id="collage">
             <div id="vol-image">
-                <img src="images/voluntarios.png" alt="Fotografía de miembros del Tec de Monterrey">
+                <img data-src="images/voluntarios.png" class="lazy" alt="Fotografía de miembros del Tec de Monterrey">
             </div>
             <div id="class-image">
-                <img src="images/clases.png" alt="Fotografía de niños en clase">
+                <img data-src="images/clases.png" class="lazy" alt="Fotografía de niños en clase">
             </div>
         </section>
 
@@ -132,12 +146,12 @@
                     - Rommel
                 </div>
                 <div class="test-img">
-                    <img src="images/rommel.png">
+                    <img data-src="images/rommel.png" class="lazy" alt="Testimonio alumno">
                 </div>
             </div>
             <div id="test2" class="test">
                 <div class="test-img">
-                    <img src="images/zoom.png">
+                    <img data-src="images/zoom.png" class="lazy" alt="Testimonio padre">
                 </div>
                 <div class="test-text">
                     "He visto un cambio muy bueno en mi hijo,
